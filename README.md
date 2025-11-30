@@ -1,65 +1,38 @@
-# TikTok Analytics Bot (Simulasi)
+# UTS Transformasi Digital – TikTok Analytics Bot (Simulasi)
 
-Script Python ini mensimulasikan proses **pencarian akun kampus di TikTok**, melakukan **“scraping” konten secara fiktif**, lalu menyusun **laporan analisis engagement** dalam bentuk **Excel, CSV, dan file teks**.
+File utama: `uts_trans_digital.py`  
+Versi: v1.0 (Simulasi, manual data collection)
 
-> ⚠️ Catatan penting:  
-> Script **tidak** terhubung ke API TikTok asli. Seluruh data (akun, konten, likes, komentar, dsb.) adalah **data dummy/simulasi** yang dibuat untuk keperluan demo.
-
----
-
-## Fitur Utama
-
-1. **Simulasi pencarian akun TikTok**
-   - Mencari akun berdasarkan daftar `keywords` (misalnya: *"universitas indonesia"*, *"ugm"*, *"itb"*, dll).
-   - Hanya akun yang **verified** yang akan diproses lebih lanjut.
-   - Menampilkan log proses scanning dengan efek delay seperti sedang memanggil API.
-
-2. **Simulasi scraping konten**
-   - Mengambil `num_posts` (default: 10) postingan terbaru secara simulasi.
-   - Menghasilkan data:
-     - Nama akun
-     - Jumlah follower
-     - Tanggal unggahan
-     - Judul/keterangan video
-     - Jumlah like, share, komentar
-     - Contoh komentar (sample) yang diambil secara acak
-
-3. **Perhitungan engagement sederhana**
-   - Menghitung rata-rata:
-     - `Jumlah Like`
-     - `Jumlah Share`
-     - `Jumlah Komentar`
-   - Menghitung `Total Engagement` per akun dan mengurutkan dari yang tertinggi.
-
-4. **Export hasil otomatis**
-   - Menyimpan data detail ke:
-     - `Hasil_Scan_TikTok.xlsx`
-     - `Hasil_Scan_TikTok.csv`
-   - Membuat laporan ringkas ke:
-     - `Laporan_Otomatis.txt`
+Script ini mensimulasikan proses **analisis sederhana akun TikTok kampus** untuk keperluan tugas UTS.  
+Script **tidak benar-benar terhubung ke TikTok**, melainkan menggunakan data yang diambil secara manual dari akun sosmed perguruan tinggi / universitas.
 
 ---
 
-## Teknologi & Library
+## 1. Tujuan Aplikasi
 
-- Python 3.8+ (disarankan)
-- [pandas](https://pandas.pydata.org/) (untuk pengolahan data tabular)
-- Library standar Python:
-  - `random`
-  - `time`
-  - `sys`
-  - `datetime`
+Aplikasi ini dibuat untuk mensimulasikan:
+
+1. **Pencarian akun resmi** berdasarkan kata kunci (nama universitas).
+2. **Pengambilan konten (scraping simulasi)** dari setiap akun yang ditemukan.
+3. **Perhitungan rata-rata interaksi** (like, share, komentar) per akun.
+4. **Analisis engagement**:
+   - Menentukan akun dengan **engagement tertinggi**.
+   - Menentukan akun yang **paling aktif secara interaksi** (berdasarkan rata-rata komentar).
+5. **Pembuatan laporan otomatis** dalam bentuk:
+   - File Excel (`.xlsx`)
+   - File CSV
+   - File teks (`Laporan_Otomatis.txt`)
+
+Semua dijalankan secara otomatis melalui satu file Python.
 
 ---
 
-## Instalasi
+## 2. Fitur Utama Script
 
-1. **Clone / salin proyek ini** (atau simpan file `.py` di folder kerja Anda).
+### 2.1 Simulasi Pencarian Akun TikTok
 
-2. **Buat virtual environment (opsional tapi direkomendasikan)**
+Fungsi: `search_tiktok_accounts(keywords)`
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate      # Mac/Linux
-   # atau
-   venv\Scripts\activate         # Windows
+- Input: list kata kunci, misalnya:
+  ```python
+  search_keywords = ["universitas indonesia", "ugm", "itb", "unpad", "binus"]
