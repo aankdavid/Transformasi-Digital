@@ -1,0 +1,39 @@
+LAPORAN HASIL SCANNING TIKTOK
+Generated at: 2025-11-30 11:23:13
+========================================
+
+1. DAFTAR AKUN YANG TERDETEKSI
+- @univ_indonesia (Followers: 715000)
+- @ugm.id (Followers: 6282000)
+- @itbofficial (Followers: 62000)
+- @univbrawijaya (Followers: 418000)
+- @universitaspadjadjaran (Followers: 882000)
+- @binusuniversityofficial (Followers: 233000)
+- @ittstangsel (Followers: 1628)
+
+2. RATA-RATA INTERAKSI PER AKUN
+   (Rata-rata Like, Share, Komentar, dan Total Interaksi per post)
+
+               Nama Akun  Rata-rata Like  Rata-rata Share  Rata-rata Komentar  Rata-rata Total Interaksi
+                 @ugm.id        309706.8           9245.2              4258.1                   323210.1
+ @universitaspadjadjaran         34515.9            923.0               402.7                    35841.6
+         @univ_indonesia         31784.1           1127.2               452.8                    33364.1
+          @univbrawijaya         22758.2            633.5               246.5                    23638.2
+@binusuniversityofficial         12317.0            309.8               148.5                    12775.3
+            @itbofficial          3082.7            100.0                44.6                     3227.3
+            @ittstangsel            86.5              2.3                 0.2                       89.0
+
+3. RINGKASAN AKUN PALING AKTIF & ENGAGEMENT TERTINGGI
+   a. Akun dengan engagement tertinggi (berdasarkan rata-rata total interaksi):
+      - Nama Akun          : @ugm.id
+      - Rata-rata Like     : 309706.8
+      - Rata-rata Share    : 9245.2
+      - Rata-rata Komentar : 4258.1
+      - Rata-rata Total Interaksi: 323210.1
+
+   b. Akun paling aktif secara interaksi (dihitung dari rata-rata komentar tertinggi):
+      - Nama Akun          : @ugm.id
+      - Rata-rata Komentar : 4258.1
+      - Rata-rata Like     : 309706.8
+      - Rata-rata Share    : 9245.2
+      - Rata-rata Total Interaksi: 323210.1
