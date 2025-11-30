@@ -1,4 +1,4 @@
-# UTS Transformasi Digital – TikTok Analytics Bot (Simulasi)
+# TikTok Analytics Bot (Simulasi)
 
 File utama: `uts_trans_digital.py`  
 Versi: v1.0 (Simulasi, manual data collection)
